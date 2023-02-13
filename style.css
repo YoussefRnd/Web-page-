@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
 
 /* this font for logo */
 @font-face {
@@ -145,19 +148,17 @@ nav li a:hover:after {
 
 .left button {
     color: #ffffff;
-    /* background-image: linear-gradient(
+    background-image: linear-gradient(
         to right,
         rgb(188, 102, 131),
         rgb(209, 102, 112)
-    ); */
-	background-color: transparent;
+    );
     border: none;
     padding: 10px 15px;
     border-radius: 15px;
     font-size: 20px;
     transition: all 0.3s ease;
     border: rgb(107, 46, 80) 1px solid;
-
 }
 
 .left button:hover {
@@ -168,7 +169,14 @@ nav li a:hover:after {
     );
     transform: scale(1.1);
 }
-
+.left button:active {
+	transform: scale(0.9);
+}
+.left button a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px 0;
+}
 .container {
     background-color: rgb(0, 0, 0);
     max-width: 100%;
